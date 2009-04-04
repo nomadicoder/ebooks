@@ -1,2 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package unique-identifier="uid"><metadata><dc-metadata xmlns:dc="http://purl.org/metadata/dublin_core" xmlns:oebpackage="http://openebook.org/namespaces/oeb-package/1.0/"><dc:Title>America's Great  Depression</dc:Title><dc:Language>en-us</dc:Language><dc:Identifier id="uid">DA13AC38D4</dc:Identifier><dc:Creator>Murray Rothbard</dc:Creator></dc-metadata><x-metadata><output encoding="Windows-1252"></output></x-metadata></metadata><manifest><item id="item1" media-type="text/x-oeb1-document" href="agd.html"></item></manifest><spine><itemref idref="item1"/></spine><tours></tours><guide></guide></package>
+<package unique-identifier="uid"><metadata><dc-metadata xmlns:dc="http://purl.org/metadata/dublin_core" xmlns:oebpackage="http://openebook.org/namespaces/oeb-package/1.0/"><dc:Title>America's Great  Depression (Kindle Edition)</dc:Title><dc:Language>en-us</dc:Language><dc:Identifier id="uid">DA13AC38D4</dc:Identifier><dc:Creator>Murray Rothbard</dc:Creator><dc:Publisher>Mises Institute</dc:Publisher><dc:Subject BASICCode="BUS069000">Economics</dc:Subject></dc-metadata><x-metadata><output encoding="Windows-1252"></output><EmbeddedCover>agd-cover.jpg</EmbeddedCover></x-metadata></metadata><manifest><item id="item1" media-type="text/x-oeb1-document" href="agd.html"></item><item id="toc" media-type="text/x-mbp-manifest-item"><process plugin-id="toc" id="mbp_toc_intermediary"><level depth="1" tag="div" attribute="name" value="part"></level><level depth="2" tag="div" attribute="name" value="chapter"></level></process><process plugin-id="apply-xsl" href="xmm:prev">
+	<add-to-xsl xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+		<xsl:template match="toc">
+			<html>
+				<head><meta http-equiv="Content-Type" content="text/html; charset=utf-16"/></head>
+				<body><h1 align="center">Table of Contents</h1><ul>
+					<xsl:for-each select="item"><xsl:call-template name="item"/></xsl:for-each>
+				</ul></body>
+			</html>
+		</xsl:template>
+		<xsl:template name="item">
+			<li><a href="{@href}"><xsl:value-of select="@title"/></a></li>
+			<xsl:if test="item"><ul>
+				<xsl:for-each select="item"><xsl:call-template name="item"/></xsl:for-each>
+			</ul></xsl:if>
+		</xsl:template>
+	</add-to-xsl>
+	<output href="mbp_toc.html"></output>
+</process>
+</item></manifest><spine><itemref idref="toc"/><itemref idref="item1"/></spine><tours></tours><guide><reference type="toc" title="Table of Contents" href="mbp_toc.html"></reference></guide></package>
