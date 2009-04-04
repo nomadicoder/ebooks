@@ -1,0 +1,106 @@
+Kindle Formatting Notes
+
+
+<mbp:pagebreak /> -- manual Page Break
+<a name="TOC"/> -- Bookmarks for TOC
+<a name="start"/> -- Bookmark for start of contents
+The best control over font sizes can be achieved using heading tags (<h1>, <h2>, <h3>, etc.).
+
+[191] Full-screen Images
+
+To make sure an image uploaded to DTP (referenced from HTML) shows up in the largest possible size, use the following formatting options:
+
+Images larger than 450 by 550 pixels are always re-sized by DTP
+Images inside content (i.e. referenced by HTML) need to be 64kb or smaller, otherwise they may get re-sized during the conversion process.
+Keep the image in an aspect ration of 9 to 11, which causes it to be re-sized to take up as much screen space as possible
+The 'Preview' application does not convert images for display accurately. This means that it will show larger images to be rotated or re-sized even if they aren't going to be changed in the final Kindle content. This is a known issue with the Preview. As long as your images conform to the rules above, they will remain unchanged as Kindle Editions.
+
+Common HTML Tags
+The following lists the most common tags used to achieve basic HTML formatting, and tells you how Digital Text Platform renders content using these tags. For a complete list of supported tags and attributes, see HTML Tags Supported.
+
+
+Tag	Description
+<a>	Anchor for hyperlink. Example:<a href="http://www.amazon.com">Amazon.com</a>
+<b>	Formats enclosed text as bold. (See also: <strong>)
+<br />	Creates a line break.
+<center>	Centers enclosed text horizontally.
+<em>	Emphasizes enclosed text; formatted as italic.
+<h1> - <h6>	Format enclosed text as a section heading: <h1> (largest) through <6> (smallest).
+<i>	Formats enclosed text as italic. See also, <em>.
+<img />	Defines an inline image within the text.
+<li>	Defines an item in an ordered (numbered) or unordered (bulleted) list.
+<ol>	Creates a numbered list from enclosed items, each of which is identified by a <li> tag.
+<p>	Begin and end (</p>) a paragraph. By default, text is displayed with full justified alignment and automatic hyphenation. The first line of each paragraph is indented.
+<strong>	Formats enclosed text as bold. See also, <b>.
+<u>	Formats enclosed text as underlined.
+<ul>	Creates a bulleted list from enclosed items, each of which is identified by a <li> tag.
+
+
+Custom Tags
+The following is a list of non-standard, custom tags supported by Digital Text Platform.
+
+For a list of standard HTML tags supported by Digital Text Platform, see HTML Tags Supported.
+
+For a list of the most common tags, see Basic HTML Formatting
+
+HTML Tag	Attributes	Values	Description
+<mbp:pagebreak />			Forces a page break.
+<mbp:nu>			Formats enclosed text as "not underlined." (Overrides <font> tag attributes.)
+<mbp:section>			Defines a book section.
+
+
+Paragraphs
+By default, paragraph text is displayed with full justified alignment, and automatic hyphenation. The first line of each paragraph is automatically indented.
+
+Change Alignment
+Readers can adjust the alignment dynamically in the Amazon Kindle wireless reader, and in general we recommend letting readers choose the alignment they prefer, but in some cases you may want to change the alignment to suit your content.
+
+You can force your text to be aligned left using the <p align="left"> or <div align="left"> tag.
+
+Change Indentation
+The first line of each paragraph is indented by default. You can change the indentation of the first line of a paragraph using the width attribute:
+
+<p width="N"> (pixels), <p width="N%">,<p width="Nem"> or <p width="Npt"> 
+
+Note: "N" can represent a positive or negative number.
+
+
+Examples:
+
+<p width="0">	No indent.
+<p width="10%">	Positive indent (10% of page width).
+<p width="5em">	Positive indent (5 em).
+<p width="-10pt">	Negative indent (10 pt).
+<p width="-10">	Negative indent (10 pixels).
+
+
+Tip: For no indent, use <br/> line breaks instead of <p> tags.
+
+
+Change Paragraph Spacing
+The <p> tag inserts a space before the paragraph. You can adjust spacing using the height attribute:
+
+<p height="N"> (pixels), <p height="N%">, <p height="Nem"> or <p height="Npt"> 
+
+Note: "N" can represent a positive or negative number.
+
+  • To avoid the <p> tag's default spacing, use <br /> instead of <p>.
+
+
+
+The following tips provide additional information on formatting your content with HTML.
+
+Stylesheets (CSS)
+Cascading Style Sheets must be contained in a dedicated CSS file which is separate from your HTML content. Use a <link> tag to link the CSS file to an HTML file. 
+
+e.g. <link href="styles.css" rel="stylesheet" type="text/css">. 
+
+All HTML and CSS files must be compressed into a single.zip file before uploading.
+
+Raised Initial
+To make the first letter in a paragraph larger than the text that follows, use the tag with the "size" attribute and specify a larger font size for the first letter.
+
+Once upon a time... 
+
+Margins
+At this time, Amazon DTP doesn't support margins set inside CSS/HTML (such as topmargin, leftmargin etc. set in px values). You can use the CSS margin attribute, but depending on the formatting of your text, this may not translate properly. Please note that you can only set the left, top, and bottom margins this way, never the right margin.
