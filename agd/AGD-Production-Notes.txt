@@ -50,3 +50,7 @@ Formating.1656
 4/5/09
 Continue Chapter 4
 2227-0000 Extract footnotes, clean up other notes
+
+4/6/09
+Finish Chapter 4
+2202-2300 Completed footnotes and paragraph formatting
