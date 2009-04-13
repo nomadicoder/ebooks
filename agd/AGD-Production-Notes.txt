@@ -64,3 +64,5 @@ Process Chapter 5
 Process Chapter 4-5
 2144-2218 Clean up
 
+Process Chapter 6
+2218-2145 Extract footnotes
