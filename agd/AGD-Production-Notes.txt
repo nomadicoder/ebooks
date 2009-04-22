@@ -72,3 +72,8 @@ Continue processing Chapter 6
 1440-1500
 Process Chapter 7
 1500-1525 - Extract footnotes and blockquotes.  Marker set on line 257
+
+4/21/09
+Continue processing Chapter 7
+2215-2315 - Complete footnote extraction.
+2315 - Create kindlebook
