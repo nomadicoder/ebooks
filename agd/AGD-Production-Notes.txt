@@ -69,4 +69,6 @@ Process Chapter 6
 
 4/13/09
 Continue processing Chapter 6
-1440-
+1440-1500
+Process Chapter 7
+1500-1525 - Extract footnotes and blockquotes.  Marker set on line 257

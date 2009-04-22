@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?><build-parameters><item id="toc"><item media-type="text/x-mbp-manifest-item" plugin-id="toc" id="mbp_toc_intermediary">
+<level depth="1" tag="div" attribute="name" value="part"></level><level depth="2" tag="div" attribute="name" value="chapter"></level></item><item id="toc" media-type="text/x-mbp-manifest-item" plugin-id="apply-xsl" href="Z:\skng On My Mac\git-Projects\ebooks\agd\agd_opfcache\toc-mbp_toc_intermediary.xml">
+
+	<add-to-xsl xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+		<xsl:template match="toc">
+			<html>
+				<head><meta http-equiv="Content-Type" content="text/html; charset=utf-16"/></head>
+				<body><h1 align="center">Table of Contents</h1><ul>
+					<xsl:for-each select="item"><xsl:call-template name="item"/></xsl:for-each>
+				</ul></body>
+			</html>
+		</xsl:template>
+		<xsl:template name="item">
+			<li><a href="{@href}"><xsl:value-of select="@title"/></a></li>
+			<xsl:if test="item"><ul>
+				<xsl:for-each select="item"><xsl:call-template name="item"/></xsl:for-each>
+			</ul></xsl:if>
+		</xsl:template>
+	</add-to-xsl>
+	<output href="mbp_toc.html"></output>
+</item></item></build-parameters>
