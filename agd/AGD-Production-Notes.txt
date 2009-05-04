@@ -77,3 +77,12 @@ Process Chapter 7
 Continue processing Chapter 7
 2215-2315 - Complete footnote extraction.
 2315-2330 - Create kindlebook (Creator hung -- reboot)
+
+4/24/09
+Process Chapter 8
+1800-1830 Mark off and extract footntes, blockquotes to page 216
+
+5/4/09
+Continue processing Chapter 8
+0710-0722 Extract all footnotes. (To do: Clean up formatting and tags)
+0722-0727 Restored agd-footnotes-7.html and Removed anchor link, color and size from Chapter 8 footnotes.
