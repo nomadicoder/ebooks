@@ -86,3 +86,9 @@ Process Chapter 8
 Continue processing Chapter 8
 0710-0722 Extract all footnotes. (To do: Clean up formatting and tags)
 0722-0727 Restored agd-footnotes-7.html and Removed anchor link, color and size from Chapter 8 footnotes.
+
+5/5/09
+Continue processing Chapter 8
+2124-2154 Complete footnote extraction and insert into book
+Process Chapter 9
+2154-2222 Extracted all footnotes. (To do: Clean up formatting and tags)
