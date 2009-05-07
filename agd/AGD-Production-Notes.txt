@@ -92,3 +92,7 @@ Continue processing Chapter 8
 2124-2154 Complete footnote extraction and insert into book
 Process Chapter 9
 2154-2222 Extracted all footnotes. (To do: Clean up formatting and tags)
+
+5/6/09
+Continue processing Chapter 9
+2112-2158
