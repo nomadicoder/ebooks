@@ -96,3 +96,7 @@ Process Chapter 9
 5/6/09
 Continue processing Chapter 9
 2112-2158
+
+5/8/09
+Process Chapter 10
+2104-2222 Extract footnotes.  Basic clean up.  Clean up other footnotes in final text.
