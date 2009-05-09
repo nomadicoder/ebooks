@@ -100,3 +100,8 @@ Continue processing Chapter 9
 5/8/09
 Process Chapter 10
 2104-2222 Extract footnotes.  Basic clean up.  Clean up other footnotes in final text.
+
+5/9/09
+Process Chapter 11
+0923-1038 Extract footnotes.  Clean up.  Adjust fonts.  Integrate into final text body.
+1038-1058 Add anchor tags to footnotes.
