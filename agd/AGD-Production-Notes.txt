@@ -105,3 +105,8 @@ Process Chapter 10
 Process Chapter 11
 0923-1038 Extract footnotes.  Clean up.  Adjust fonts.  Integrate into final text body.
 1038-1058 Add anchor tags to footnotes.
+1058-1114 Build document. Fix two unresoved links.  Not building.
+
+5/12/09
+Process Chapter 12
+2140-
