@@ -111,3 +111,17 @@ Process Chapter 11
 Process Chapter 12
 2140-2238 Process Chapter 12
 2238=2321 Process Appendix
+2321-2340 Create Kindle Book
+2340-2356 Ship to Mises.org
+
+5/13/09
+2138-2148 Add links to appendix
+
+To Do:
+Create amazon production package
+X-Add footnote links to appendix
+Clean up footnote tags for all chapters <font size==1><a...><p><sup></sup>text</p></a></font>
+Clean up footnote sup's -- <font size=-1><sup>...</sup></font>
+Resize cover.
+Clean up index.
+Restore table text
