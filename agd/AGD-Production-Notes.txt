@@ -117,11 +117,33 @@ Process Chapter 12
 5/13/09
 2138-2148 Add links to appendix
 
+5/17/09
+0705-0925 Clean up footnote sup's  Formatting. W3C Validation
+1100-1218 Continue reformatting footnotes.  Prepare images, Upload to amazon for eval.
+
+
+5/20/09
+1400-1838 TOC and Index
+
+5/21/09
+1612-1722 TOC and Index Chapter 4
+1722-1725 Update
+
+5/30/09
+1750-1902 TOC and Index Chapter 7-9
+1945-2227 Toc and Index Chpater 10-Index.  Check page numbers.
+
+
+Replace ><sup> with ><font size="-1"><p><sup>
+Replace </a> with </p></font></a>
+
+Footnote Nesting: <a name="Note-1-"><font size="-1"><p><sup>1</sup> ... </p></font></a>
+
 To Do:
-Create amazon production package
+X-Create amazon production package
 X-Add footnote links to appendix
-Clean up footnote tags for all chapters <font size==1><a...><p><sup></sup>text</p></a></font>
-Clean up footnote sup's -- <font size=-1><sup>...</sup></font>
-Resize cover.
+X-Clean up footnote tags for all chapters <font size==1><a...><p><sup></sup>text</p></a></font>
+X-Clean up footnote sup's -- <font size=-1><sup>...</sup></font>
+X-Resize cover.
 Clean up index.
 Restore table text
