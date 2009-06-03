@@ -133,6 +133,19 @@ Process Chapter 12
 1750-1902 TOC and Index Chapter 7-9
 1945-2227 Toc and Index Chpater 10-Index.  Check page numbers.
 
+6/2/09
+2110-0002 Checkin in and Fix tagging
+
+Swap tags
+(<h3 style="text-align: center">)(\<a name\="\S*"\>)
+$2$1
+
+<p>(<a name="Note-\d+\-\d+">)(\[\d+\])</a>
+$1<p>$2
+
+
+
+
 
 Replace ><sup> with ><font size="-1"><p><sup>
 Replace </a> with </p></font></a>
